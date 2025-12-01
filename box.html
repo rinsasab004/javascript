@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>change color</title>
+  </head>
+
+
+  <body>
+    <!-- ..............................change 3  colours.................................. -->
+    <!-- <div id="box" style="background-color: black; width: 200px; height: 200px;"></div>
+    <button onclick="changeToRed()" class="btn btn-danger ">Red</button>
+    <button onclick="changeToGreen()" class="btn btn-success">Green</button>
+    <button onclick="changeToBlue()" class="btn btn-primary ">Blue</button>
+
+    <script>
+        function changeToRed(){
+            document.getElementById("box").style.backgroundColor="red"
+        }
+        function changeToGreen(){
+            document.getElementById("box").style.backgroundColor="green"
+        }
+        function changeToBlue(){
+            document.getElementById("box").style.backgroundColor="blue"
+        }
+    </script> -->
+
+
+    <!-- .............................select color............................................. -->
+
+    <div id="box" style="background-color: black; width: 200px; height: 200px;"></div>
+    <input type="color" onclick="changeColor(event)">
+
+    <script>
+        function changeColor(e){
+            color=e.target.value
+            console.log(color);
+            document.getElementById("box").style.backgroundColor=`${color}`
+        }
+    </script>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  </body>
+</html>
