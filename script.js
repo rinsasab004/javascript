@@ -333,13 +333,79 @@
 
 // .....................FUNCTIONS...................
 
-function findSum(a,b){
-    console.log(a+b);
-}
+// function findSum(a,b){
+//     console.log(a+b);
+// }
 
-findSum(10,20)
-findSum(11,20)
-findSum(18,20)
+// findSum(10,20)
+// findSum(11,20)
+// findSum(18,20)
+
+
+
+// ..............................................................................
+
+// ......................STRING METHODS..............................
+// s="hello"
+// num=123
+// console.log(s.length);   //5
+// s2=num.toString()
+// console.log(typeof s2);
+
+// s='Hello world'
+// console.log(s.toUpperCase());   //HELLO WORLD
+// console.log(s.toLowerCase());   //hello world
+// console.log(s[0]);      //H
+// console.log(s.charAt(0));   //H
+// console.log(s.at(0));  //H
+// console.log(s.trim());   //Hello World  #used to remove the space
+// console.log(s.trimStart());    //--used to remove the beginning space
+// console.log(s.trimEnd());    //--used to remove the ending space
+// console.log(s.split(" "));  //['Hello','world']
+// console.log(s.slice(0,5));   //Hello
+// console.log(s.substring(0,5));    //Hello
+// console.log(s.substr(0,5));   //Hello
+
+// num=5
+// s=num.toString()
+// console.log(s.padStart(5,0));     //00005
+// console.log(s.padEnd(5,0));       //50000  #5 digit,endswith 0
+// eg:- 20
+//     padStart(3,0)   #want 3 digit number so start with 0 and fill given 2 digits
+//     answer is 020
+
+// ......Date..........
+
+// let today=new Date
+// console.log(today);
+// console.log(today.getFullYear());
+// console.log(today.getMonth()+1);
+// console.log(today.getDate());
+
+// let today=new Date
+// console.log(today);
+// y=today.getFullYear()
+// m=today.getMonth()+1
+// d=today.getDate()
+// d1=d.toString().padStart(2,0)
+
+// fulldate=`${y}-${m}-${d1}`
+// console.log(fulldate)
+
+// .............................................
+
+s="HeLlo world"
+console.log(s.replace("l","*"));   //HeL*o world
+console.log(s.replaceAll(/l/g,"*"));  //HeL*o wor*d
+console.log(s.concat("s"));  //HeLlo worlds
+
+
+
+
+
+
+
+
 
 
 

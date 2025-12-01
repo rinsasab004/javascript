@@ -23,16 +23,24 @@
   </head>
   <body class="d-flex vw-100 vh-100 align-items-center justify-content-center">
 
-    <form action="submit.html">
-        <input type="text" placeholder="username" required id="uname"><br>
+    <form action="submit of form.html" onsubmit="return formValidation()">
+        <input type="text" placeholder="username" required id="uname"><br><br>
         <input type="text" placeholder="password" required id="psw"><br>
-        <input type="submit" onclick="formValidation()">
+        <input type="submit" class="btn-success mt-4 ms-5"  >
     </form>
 
     <script>
         function formValidation(){
             uname=document.getElementById("uname").value 
             psw=document.getElementById("psw").value 
+            if(uname.trim()=="" || psw.trim()==""){
+                alert("invalid input")
+                return false
+            }
+            else{
+                alert("valid")
+                return true
+            }
         }
     </script>
 
