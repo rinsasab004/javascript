@@ -7,12 +7,12 @@
 </head>
 <body>
 
-    ...........................internal css...........................................
+    <!-- ...........................internal css........................................... -->
 
     <h1 id="head1" style="color: red;">Hello</h1>
     <button onclick="document.getElementById('head1').innerHTML='going' ">change content</button>
     <button ondblclick="document.getElementById('head1').style.color='aqua' ">change colour</button>
-    <button onmouseup="document.getElementById('head1').style.color='aqua' ">release mouse</button>
+    <button onmouseup="document.getElementById('head1').style.color='green' ">release mouse</button>
     <br>
     <hr>
 
@@ -36,10 +36,10 @@
 
         // 2)................js events..................
 
-        //... click,dblclick,mouseenter,mouseover,mousedown........
+        //... onclick,dblclick,mouseenter,mouseover,mousedown........
 
-        // document.getElementById("head1").style.color="blue"
-        // document.getElementById("head1").innerHTML="coming" 
+        document.getElementById("head1").style.color="blue"
+        document.getElementById("head1").innerHTML="coming" 
 
     </script>
 
