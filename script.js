@@ -378,9 +378,9 @@
 
 // let today=new Date
 // console.log(today);
-// console.log(today.getFullYear());
-// console.log(today.getMonth()+1);
-// console.log(today.getDate());
+// console.log(today.getFullYear());   //2025
+// console.log(today.getMonth()+1);    //12
+// console.log(today.getDate());       //1
 
 // let today=new Date
 // console.log(today);
@@ -390,14 +390,127 @@
 // d1=d.toString().padStart(2,0)
 
 // fulldate=`${y}-${m}-${d1}`
-// console.log(fulldate)
+// console.log(fulldate)             //2025-12-01
 
 // .............................................
 
-s="HeLlo world"
-console.log(s.replace("l","*"));   //HeL*o world
-console.log(s.replaceAll(/l/g,"*"));  //HeL*o wor*d
-console.log(s.concat("s"));  //HeLlo worlds
+// s="HeLlo world"
+// console.log(s.replace("l","*"));   //HeL*o world
+// console.log(s.replaceAll(/l/g,"*"));  //HeL*o wor*d
+// console.log(s.concat("s"));  //HeLlo worlds
+
+
+// ..................................................................................................
+
+// ..........................ARRAY METHODS.............................
+
+// arr1=[100,200,300,400,500]
+// // console.log(arr1[0]);       //100
+// // console.log(arr1.pop());    //500    delete last element
+// // console.log(arr1.shift());     //100    remove first element
+
+// // arr1.push(1000)
+// // console.log(arr1);    //[200,300,400,1000]     add element
+
+// // arr1.unshift(1,2,3)
+// // console.log(arr1);      //[  1,2,3,
+// // //                        200,300,400,
+// // //                     1000]
+
+// // console.log(arr1.slice(2,4));        //[300,400]
+// // // arr1.splice(2,0,1000)    //[100,200,1000,300,400,500]
+// // // arr1.splice(2,1,1000)    //[100,200,1000,400,500]
+// // arr1.splice(2,2,1000)    //[100,200,1000,500]
+// // console.log(arr1);
+
+// console.log(arr1.length);   //5
+// console.log(arr1.at(0));   //100
+
+
+// ......................................................................................................
+
+// ............ARROW FUNCTION ()=>()   -anonymous function or lamnda functions...............
+
+// symbols:-
+      
+//      (arguments)=>(exp)
+//      x=>()
+//      x=>{}
+
+// let f=(x,y)=>{
+//     console.log(x);      //2
+//     return x+y
+// }
+// console.log(f(2,3));        //5
+                
+        //    .......................................................
+
+
+// // asynchronous functions:- not depend another lines
+// // eg:-
+//     console.log("welcome");
+//     setTimeout(()=>{
+//         console.log("asynchronous");
+//     },2000)
+//     console.log("bye");
+
+        //    .......................callback function.........................
+
+// //promises :-fulfilled,rejected,pending
+// syntax:-  
+//      promises=fetch("")
+
+// let promises=new Promise(function(resolve,rejected){
+//     let data=false       //true-fulfilled   false-rejected
+//     if(data){
+//         resolve("fulfilled")
+//     }
+//     else{
+//         resolve("rejected")
+//     }
+// })
+// promises.then((result)=>{
+//     console.log(result);
+// }).catch((error)=>{
+//     console.log(error);
+// })
+    
+
+// ...............................................
+
+//map,filter,reduce,foreach(),find()
+
+// arr1=[10,20,30,40,50]
+// arr1.forEach((i)=>{
+//     console.log(i);      //10 20 30 40 50
+// });
+     
+// arr1.map((i)=>{
+//     console.log(i);    //10 20 30 40 50  
+// });
+     
+// arr1.filter((i)=>{
+//     console.log(i);       //10 20 30 40 50
+// });
+
+// let res=arr1.reduce((i,j)=>(i+j))
+// console.log(res);                //10 20 30 40 50 150
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
