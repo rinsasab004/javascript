@@ -13,7 +13,7 @@ students.forEach((stud)=>{
                 <td>${stud.id}</td>
                 <td>${stud.name}</td>
                 <td>${stud.place}</td>
-          </tr>
+            </tr>
     `
     console.log(data);
 

@@ -496,6 +496,75 @@
 // let res=arr1.reduce((i,j)=>(i+j))
 // console.log(res);                //10 20 30 40 50 150
 
+
+
+// ...................................................................................
+
+// ..........................SPREAD OPERATOR.........................
+
+
+// arr1=[1,2,3]
+// arr2=[4,5,6]
+// arr3=[...arr1,...arr2]
+// console.log(arr3);         //[1,2,3,4,5,6]
+
+// obj1={name:'abc',place:'calicut'}
+// obj2={email:'abc@gmail.com'}
+// obj3={...obj1,...obj2}
+// console.log(obj3);           //{name:'abc',place:'calicut',email:'abc@gmail.com'}
+
+
+//.................DESTRUCTURING.....................
+
+// arr1=[10,20,30,40,50]
+// let [a,b,...c]=arr1
+// console.log(a);      //10
+// console.log(b);      //20
+// console.log(c);      //[30,40,50]
+
+
+// user={name:"",place:"",email:""}
+// let {name,place,email}=user
+// if(!name || !place || !email){
+//         console.log("invalid input");   ///
+// }
+// else{
+//         console.log("valid");
+// }
+
+
+
+// ...........................................................................................
+
+// ....................REGULAR EXPRESSIONS.....................
+
+
+// //match,matchall,test
+
+s="javascript"
+// // // pattern=/java/   //- g,i,m           
+// // console.log(pattern.test(s));               //true
+// pattern=/Java/ig
+// // console.log(s.match(pattern));             //['java']
+// res=s.matchAll(pattern)
+// for(let i of res){
+//         console.log(i);              //[ 'java', index: 0, input: 'javascript', groups: undefined ]
+ 
+// }
+ 
+console.log(s.replace("a","*"));            //j*vascript 
+console.log(s.replaceAll(/a/g,"*"));        //j*v*script
+
+
+
+
+
+
+
+
+
+
+
      
 
 
