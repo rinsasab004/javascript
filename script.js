@@ -1,8 +1,10 @@
 // console.log("javascript")
 
+const { Component } = require("react")
+
 
     // ......................................... 
-//    keywords - a)let:-local scope , b)var :- global, c)const :- local
+//    keywords - a)let:-local scope , b)var :- global,redefined c)const :- local
 
 // a) #10 5
 // let x=10
@@ -169,7 +171,7 @@
 
 // ...............................................................................
  
-//...............conditional statements(if,switch)...............
+//...............conditional statements(if,if..else if..else,switch)...............
 
 // if(condition1){
 //     block1
@@ -541,7 +543,7 @@
 
 // //match,matchall,test
 
-s="javascript"
+// s="javascript"
 // // // pattern=/java/   //- g,i,m           
 // // console.log(pattern.test(s));               //true
 // pattern=/Java/ig
@@ -552,13 +554,54 @@ s="javascript"
  
 // }
  
-console.log(s.replace("a","*"));            //j*vascript 
-console.log(s.replaceAll(/a/g,"*"));        //j*v*script
+// console.log(s.replace("a","*"));            //j*vascript 
+// console.log(s.replaceAll(/a/g,"*"));        //j*v*script
+
+
+// s=`ava
+// script
+// java
+// script`
+// pattern=/^j/m
+// console.log(s.match(pattern));        //[
+// //                                           'j',
+// //                                           index: 11,
+// //                                           input: 'ava\nscript\njava\nscript',
+// //                                           groups: undefined
+// //                                         ]
+
+
+
+// ......identifiers and metacharacers in RE...........
+
+// \d 	   Matches digit (0–9)	                     \d\d → 2-digit numbers     
+// \D	   Matches non-digit	                     \D+
+// \w	   Word character: A-Z a-z 0-9 _	     \w+ matches a full word
+// \W	   Non-word character	                     \W+
+// \s	   Whitespace → space, tab, newline          \s+
+// \S	   Non-whitespace	                     \S+
+// \bx     ^x  
+// x\b 
+// in*     zero or more                              i ,in,innn 
+// in+     one or more                               in,inn,innn
+// in?     atmost one                                i,in
+// i|n     i or n
+// .       single characters
+// a.c     abc ,axc,alc
+// a..c    abbc,aaac,asdc
 
 
 
 
 
+// react-    javascript library       -  js,jsx-js&html
+// angular-  framework              -  .ts,html,css
+
+// singlepage app  -html
+// Components -Reg.html  
+
+// virtualDOM -document object model 
+// tree like structure
 
 
 
